@@ -1,1 +1,11 @@
-
+{
+  "Bug_report_1": "Вы там совсем тютю? Потеем.Ах да, а на что баг-репорт то?",
+  "Bug_report": "ID добавим ссыль http://energy-telecom.portnov.com/qa/",
+  "Summary": "Отправляем форму без указания почты",
+  "Steps to reproduce": "1) Открыть сайт 2)Указать валидные данные в полях с '*'  3)Нажать'Submit'"
+  "Actual result": "Запрос отправлен",
+  "Expected result": "Запрос не отправлен",
+  "Severity": "Критичный",
+  "Priority": "Высокий",
+  "Autorh": "QA Alex",
+}
