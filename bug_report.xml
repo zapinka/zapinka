@@ -1,1 +1,10 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<bug_report>
+        <Summary>Название  Что Где Когда</Summary>
+        <Steps_to_reproduce>Коротко и ясно</Steps_to_reproduce>
+        <Actual_result>То что мы видим</Actual_result>
+        <Expected_result>То что мы хотим видеть</Expected_result>
+        <Severity>Люблю блокеры, кайфую от критикал, страдаю от мажорв,рефликсирую от миноров, а кто смотрит на тривиалы?</Severity>
+        <Priority>Обычно выставляют все кроме тебя, разберись почему это так, ты что не достоин?</Priority>
+        <Autorh>Понтуешься?</Autorh>
+</bug_report>
