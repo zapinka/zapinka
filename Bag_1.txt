@@ -1,0 +1,14 @@
+ID: Po4tu ob9zatelnii atrebyt
+Summary: 4to Gde Kogda
+Environment: OS comp
+Step to reproduce: Korotko ana 9sno
+Actual result: facti4eskii result
+Expected result: Ozhidaemii result
+Severity: kakoi bag
+Attachment: screenshot video docs
+Priority: kak bag Blu9et na PO
+Status: in working
+Author: Me
+Comment:
+Version:
+Version fixed:
