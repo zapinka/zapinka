@@ -1,0 +1,5 @@
+Film: Mgla
+Serial: Billions
+Food: fruit
+Favorite time of the year: Summer
+Country for live: Indonesia
