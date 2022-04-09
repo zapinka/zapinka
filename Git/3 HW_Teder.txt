@@ -1,0 +1,88 @@
+1. На локальном репозитории сделать ветки для:
+- Postman
+	$git branch Postman
+
+- Jmeter
+	$git branch Jmeter
+	
+- CheckLists
+	$git branch CheckLists
+	
+- Bag_Reports
+	$git branch Bug_reports
+	
+- SQL
+	$git branch SQL
+	
+- Charles
+	$git branch Charles
+	
+- Mobile_testing
+	$git branch Mobile_testing
+	
+2. Запушить все ветки на внешний репозиторий 
+	$git push -u origin Postman
+	$git push -u origin Jmeter
+	$git push -u origin CheckLists
+	$git push -u origin Bug_reports
+	$git push -u origin SQL
+	$git push -u origin Charles
+	$git push -u origin Mobile_testing
+	
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+	$git checkout Bug_reports
+	$vim Bug_1.txt	
+
+ID: Po4tu ob9zatelnii atrebyt
+Precondicion:
+Environment: OS comp
+Summary: 4to Gde Kogda
+Step to reproduce: Korotko and 9sno
+Actual result: facti4eskii result
+Expected result: Ozhidaemii result
+Severity: kakoi bug
+Priority: kak bug Blu9et na PO
+Attachment: screenshot video docs
+Status: in working
+Author: Me
+Comment:
+Version build:
+Version fixed:
+
+4. Запушить структуру багрепорта на внешний репозиторий
+	$git add .
+	$git commit -m "bug_1.txt"
+	$git push
+
+5. Вмержить ветку Bug_reports в Main 
+	$git checkout main
+	$git merge Bug_reports
+	
+6. Запушить main на внешний репозиторий.
+	$git push 
+
+7. В ветке CheckLists набросать структуру чек листа.
+	$git checkout CheckLists
+	$vim CheckList
+
+ID
+Build
+Environment
+Test date
+Tester
+Test type
+Title
+Cheking
+Result
+
+8. Запушить структуру на внешний репозиторий
+	$git add .
+	$git commit -m "add CheckList"
+	$git push
+	
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+	Create Pull Request --> Merge pull request --> Confirm mer
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+	$git push -u origin main	
+	$git pull -u origin main

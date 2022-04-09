@@ -1,0 +1,195 @@
+1) Посмотреть где я:
+	Акроноим PWD Print Working Directory - вывести рабочий каталог
+	pwd
+
+Так же есть отличный помощник, который выводит список файлов в директории  "ls"
+	$ ls -a(выводит все файлы, включая скрытые, прикольно)
+	$ ls -l(выводит подробную информацию о файлах)
+	WOW 
+	оказывается можно лепить друг на друга опции (опция - доп. условие к основной команде)
+	$ ls -la (выведет подробно все файлы, даже которые скрыты)
+	Конечно, есть еще команды, но для начала мне хватит.
+
+2) Создать папку
+	mkdir Акроноим Make Directory - создать директорию(папку)
+	mkdir konfeti (создали папку конфеты, я же сладкоежка)
+	mkdir shokolad (шоколад)
+	mkdir torts (тортики)
+	mkdir {name_papka,name_papka,name_papka,...} создать несколько папок в одной папке
+	mkdir -p /name_papka/name_papka/..  создаем папку в папке.
+	мы же тут тренируемся?
+    mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir mkdir
+
+3) Зайти в папку
+	Акроноим CD Change Directory - сменить директорию
+	при команде  CD перемещение осуществляется на 1 уровнь выше
+	вот эти ./..это перемещает на уровень ниже
+	вот эти ./../..(и т.д) это перемещает на несколько уровней ниже
+	изначально мы f
+	а куда нам идти? ls -la идем в git_26
+	cd git_26/  т.е мы /f/git_26
+	cd ls -la  идем в cola_1
+	cd cola_1/  т.е мы /f/git_26/cola_1
+	Конечная. но а вдруг нам надо назад?
+	cd ././../ и т.д. куда мы хотим провалится, на сколько уровней. удобно
+
+4) Создать 3 папки 
+	mkdir famaly_1
+	mkdir famaly_2
+	mkdir famaly_3
+	
+5) Зайти в любую папку
+	cd torts/  > /f/git_26/cola_1/torts
+
+6) Создать 5 файлов (3 txt, 2json)
+	Утилита touch позволяет создать файл
+	touch napaleon.txt
+	touch chocolate.txt
+	touch 3chocolate.txt
+	touch napaleon_recept.json
+	touch chocolate_recept.json
+	touch 3chocolate_recept.json
+	так же с touch можем писать все файлы в одну строку touch f_1.txt. f_2.txt f_3.json
+	> name_file.(format file)  так же создает файл file.(формат)
+	touch file{1..9}.(format file) если нужно будет одинакое кол-во файлов, но разные будут цифры на конце.
+
+7) Создать 3 папки
+	упадем в /f/git_26
+	мы в /f/git_26/cola_1/torts
+	cd ./../..
+	mkdir f_1
+	mkdir f_2
+	mkdir f_3
+	
+8) Вывести список содержимого папки
+	ls -la
+
+9) Открыть любой .txt файл
+	vim file_1.txt
+	можно открыть любой файл из другого диска? проверим
+	создается новый файл с этим названием в этой директории
+
+10) Написать туда что-нибудь, любой текст
+	чтобы начать писать используем клавишу "i"
+	текст был успешно создан
+	
+11) Сохранить и выйти
+	чтобы сохранить и выйти используем
+	Esc + : + w (где w это "write") + q (где q это "quite")
+	
+12) Выйти из папки на уровень выше
+	наше любимое cd
+	напомним себе что у нас еще есть 
+	ls -la
+	cd name_file(выше)
+
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку
+	Акроноим mv - move двигать\перемещать
+	i --inreractive перед перезаписывванием - спросить
+	u --update 
+	важно, если мы находимся в папке name_1, а файл находится в name_2, то мы не можем его переместить в папку name_3
+	mv name_file + опция + куда
+	mv file_12.txt torts
+	mv file_10.json chocolate
+
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку
+	Акроноим CP copy копировать
+	cp опция файл- источник директория-приемник/
+	-i inreractive перед перезаписывванием - спросить
+	-p точная копия 
+	-u update
+	
+15) Найти файл по имени
+	find найти
+	По умолчанию ищет имя файла в той папке, где сейчас находимся
+	find -name опция name_file
+	iname - не привазан к регистру
+	find -iname torts 
+
+16) Просмотреть содержимое в реальном времени (команда grep)
+	Акроноим Globally for lines matching the Regular Expression, and Print them
+	скать везде строки, соответствующие регулярному выражению, и выводить их
+	grep + опция + patter[file]
+	надо же как то остановить поток, ctrl + z 
+	tail -f + name_file
+	tail -f log_file | grep search_term
+	
+	tail -f
+	так же можно испльзовать команду
+	cat name_file
+	
+17) Вывести несколько первых строк из текстового файла
+	head -n где n- число строк, которе мы хотим получить с начала списка
+	head -5 name_file
+	
+	
+18) Вывести несколько последних строк из текстового файла	
+	tail -число это число будет кол-во последних строк в файл
+	tail -5 name_file
+
+
+19) Просмотреть содержимое длинного файла (команда less) изучите как она работает.
+	Надо же выйти из файла
+	Ctrl + c, затем q
+	-s name_file удаляет лишние пустые строки
+	less +F name_file
+	
+	
+20) Вывести дату и время	
+	date
+
+
+====================================================================================================
+Заданияе под *
+
+curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    18  100    18    0     0    163      0 --:--:-- --:--:-- --:--:--   165HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 18
+Server: Werkzeug/2.0.1 Python/3.8.10
+Date: Wed, 05 Jan 2022 22:55:02 GMT
+
+["(alex)","(27)"]
+
+
+всему голова 
+#!/bin/bash
+
+3)
+#!/bin/bash
+mkdir f_1
+
+4)
+#!/bin/bash
+mkdir f_1
+mkdir f_2
+mkdir f_3
+
+5)
+
+
+6)
+#!/bin/bash
+touch napaleon.txt
+touch chocolate.txt
+touch 3chocolate.txt
+touch napaleon_recept.json
+touch chocolate_recept.json
+touch 3chocolate_recept.json
+
+7)
+#!/bin/bash
+mkdir 10
+mkdir 11
+mkdir 12
+
+8)
+#!/bin/bash
+ls -la
+
+13)
+#!/bin/bash
+cp test.txt test1.txt 10
